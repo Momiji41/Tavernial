@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/oui">
+
+            <Button
+                android:id="@+id/accueil"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="left"
+                android:background="@drawable/logo"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ajouter un jeu"
+                android:layout_gravity="center"
+                android:layout_marginTop="-40dp"
+                style="@style/DefaultTextStyle"/>
+
+            <EditText
+                android:id="@+id/nomJeu"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                style="@style/underTextStyle"
+                android:hint="Nom du jeu"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="13dp"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                />
+
+            <TextView
+                android:id="@+id/image_jeu"
+                style="@style/titre2TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Image du jeu : "
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:id="@+id/description"
+                style="@style/titre2TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Description : "
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <EditText
+                android:id="@+id/ladescription"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                style="@style/underTextStyle"
+                android:hint="Description du jeu"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="13dp"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/prix"
+                    style="@style/titre2TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="prix : "
+                    />
+
+                <EditText
+                    android:id="@+id/leprix"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    style="@style/underTextStyle"
+                    android:hint="prix du jeu"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/border"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lelien"
+                style="@style/titre2TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="A retrouver sur :"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <EditText
+                android:id="@+id/lien"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                style="@style/underTextStyle"
+                android:hint="entrer le lien du site marchant"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="13dp"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                />
+
+            <Button
+
+                android:id="@+id/valider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valider"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/border"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

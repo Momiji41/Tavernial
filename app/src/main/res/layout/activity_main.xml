@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/oui"
+    tools:context=".MainActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/oui">
+
+            <TextView
+                android:id="@+id/inscription"
+                style="@style/underTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="S'inscrire"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                />
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/DefaultTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"
+                android:text="Bienvenue sur Tavernial" />
+
+            <ImageView
+                android:id="@+id/play"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/logo" />
+
+
+
+            <TextView
+
+                style="@style/titre2TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Nom de compte : "
+                android:layout_marginTop="15dp"
+                />
+
+            <EditText
+                android:id="@+id/Nom_de_compte"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:hint="Votre nom de comte"
+                android:layout_gravity="center"
+                style="@style/underTextStyle"
+                android:background="@drawable/border"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                style="@style/titre2TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="Mots de passe : "
+                />
+
+            <EditText
+
+                android:id="@+id/m_d_p"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:hint="**********"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                style="@style/underTextStyle"
+                android:background="@drawable/border"
+                />
+
+            <Button
+
+                android:id="@+id/valider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valider"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/Con_invite"
+                style="@style/underTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:text="Se connecter en tant qu'invité "
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
