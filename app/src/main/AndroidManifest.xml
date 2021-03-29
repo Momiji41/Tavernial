@@ -9,18 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Tavernial">
-        <activity android:name=".MainActivity">
+        <activity android:name=".menu.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".login" />
-        <activity android:name=".page_jeux"/>
-        <activity android:name=".start"/>
-        <activity android:name=".Compte"/>
-        <activity android:name=".ajoutjeu"/>
+        <activity android:name=".BDD.login" />
+        <activity android:name=".page_jeux.page_jeux"/>
+        <activity android:name=".menu.start"/>
+        <activity android:name=".menu.Compte"/>
+        <activity android:name=".menu.ajoutjeu"/>
+        <activity android:name=".page_jeux.page_jeux2"/>
     </application>
 
 </manifest>

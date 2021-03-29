@@ -1,4 +1,4 @@
-package com.example.tavernial;
+package com.example.tavernial.page_jeux;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,13 +6,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class ajoutjeu extends Activity {
+import com.example.tavernial.R;
+import com.example.tavernial.menu.start;
+
+public class page_jeux extends Activity {
 
     private TextView back;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ajout_jeux);
+        setContentView(R.layout.page_jeux);
 
         this.back = findViewById(R.id.accueil);
 

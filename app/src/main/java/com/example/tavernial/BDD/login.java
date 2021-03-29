@@ -1,4 +1,4 @@
-package com.example.tavernial;
+package com.example.tavernial.BDD;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,7 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.example.tavernial.menu.MainActivity;
+import com.example.tavernial.R;
+import com.example.tavernial.menu.start;
 
 public class login extends Activity {
 

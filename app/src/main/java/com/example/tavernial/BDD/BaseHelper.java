@@ -1,4 +1,4 @@
-package com.example.tavernial;
+package com.example.tavernial.BDD;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -9,10 +9,9 @@ import android.util.Log;
 
 import androidx.annotation.Nullable;
 
-import java.text.SimpleDateFormat;
+import com.example.tavernial.models.Jeux;
+
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 public class BaseHelper extends SQLiteOpenHelper {
 
@@ -204,7 +203,6 @@ public class BaseHelper extends SQLiteOpenHelper {
             int Indexdef = c.getColumnIndex(jeux_description);
             int Indexprix = c.getColumnIndex(jeux_prix);
             int Indeximage = c.getColumnIndex(jeux_image);
-            // int IndexUtilisateur = c.getColumnIndex(article_utilisateur);
 
             do {
                 int id = c.getInt(IndexInt);
@@ -213,11 +211,9 @@ public class BaseHelper extends SQLiteOpenHelper {
                 int prix = c.getInt(Indexprix);
                 String image = c.getString(Indeximage);
                 String lien = c.getString(5);
-                //int user = c.getInt(IndexUtilisateur);
 
                 res.add(new Jeux(name, def, prix, image, lien));
                 res.get(i).setId(id);
-                //res.get(i).setUtilisateur(user);
                 i += 1;
 
             } while (c.moveToNext());
@@ -248,7 +244,6 @@ public class BaseHelper extends SQLiteOpenHelper {
             int Indexdesc = c.getColumnIndex(jeux_description);
             int Indexprix = c.getColumnIndex(jeux_prix);
             int Indeximage = c.getColumnIndex(jeux_image);
-            // int IndexUtilisateur = c.getColumnIndex(article_utilisateur);
 
             do {
                 int id = c.getInt(IndexInt);
@@ -257,11 +252,9 @@ public class BaseHelper extends SQLiteOpenHelper {
                 int prix = c.getInt(Indexprix);
                 String image = c.getString(Indeximage);
                 String lien = c.getString(5);
-                //int user = c.getInt(IndexUtilisateur);
 
                 res.add(new Jeux(name, desc, prix, image, lien));
                 res.get(i).setId(id);
-                //res.get(i).setUtilisateur(user);
                 i += 1;
 
             } while (c.moveToNext());

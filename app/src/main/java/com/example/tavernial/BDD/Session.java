@@ -1,4 +1,4 @@
-package com.example.tavernial;
+package com.example.tavernial.BDD;
 
 import android.content.Context;
 import android.content.SharedPreferences;

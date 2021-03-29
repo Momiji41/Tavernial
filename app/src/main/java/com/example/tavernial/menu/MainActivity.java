@@ -1,18 +1,22 @@
-package com.example.tavernial;
+package com.example.tavernial.menu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.tavernial.BDD.BaseHelper;
+import com.example.tavernial.BDD.Session;
+import com.example.tavernial.BDD.login;
+import com.example.tavernial.R;
+
 public class MainActivity extends AppCompatActivity {
 
-    TextView inscription;
+    TextView inscription, invite;
     EditText ndc, mdp;
     BaseHelper bdd;
     Button connexion;
@@ -69,6 +73,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent otherActivity = new Intent(getApplicationContext(), login.class);
+                startActivity(otherActivity);
+                finish();
+            }
+        });
+
+        this.invite = findViewById(R.id.Con_invite);
+
+        invite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent otherActivity = new Intent(getApplicationContext(), start.class);
                 startActivity(otherActivity);
                 finish();
             }

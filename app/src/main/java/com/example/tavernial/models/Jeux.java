@@ -1,4 +1,4 @@
-package com.example.tavernial;
+package com.example.tavernial.models;
 
 public class Jeux {
 

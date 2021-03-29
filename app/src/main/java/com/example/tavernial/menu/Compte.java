@@ -1,4 +1,4 @@
-package com.example.tavernial;
+package com.example.tavernial.menu;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.tavernial.BDD.Session;
+import com.example.tavernial.R;
 
 public class Compte extends Activity {
 
